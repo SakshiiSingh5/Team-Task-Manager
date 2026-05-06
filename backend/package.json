@@ -1,4 +1,4 @@
-Set-Content -Path package.json -Value '{
+{
   "name": "task-manager-backend",
   "version": "1.0.0",
   "description": "Team Task Manager REST API",
@@ -19,4 +19,4 @@ Set-Content -Path package.json -Value '{
   "devDependencies": {
     "nodemon": "^3.0.2"
   }
-}'
+}
