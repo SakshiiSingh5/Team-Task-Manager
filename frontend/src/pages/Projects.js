@@ -134,7 +134,7 @@ const Projects = () => {
   const [editProject, setEditProject] = useState(null);
   const [filter, setFilter] = useState('all');
   const { user } = useAuth();
-  const navigate = useNavigate();
+
 
   const load = useCallback(async () => {
     try {
