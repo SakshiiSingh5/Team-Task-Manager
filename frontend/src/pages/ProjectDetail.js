@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { projectAPI, taskAPI, userAPI } from '../utils/api';
+import { projectAPI, taskAPI } from '../utils/api';
 import { useAuth } from '../context/AuthContext';
 import toast from 'react-hot-toast';
 import { format, isValid } from 'date-fns';
