@@ -15,7 +15,7 @@ const Tasks = () => {
   const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState({ status: '', priority: '', project: '', search: '' });
   const [searchParams] = useSearchParams();
-  const { user } = useAuth();
+  useAuth();
 
   useEffect(() => {
     projectAPI.list().then(r => setProjects(r.data.projects)).catch(console.error);
