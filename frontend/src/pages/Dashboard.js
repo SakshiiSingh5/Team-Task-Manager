@@ -65,7 +65,7 @@ const Dashboard = () => {
   if (loading) return <div className="page"><div className="loader" /></div>;
   if (!data) return <div className="page"><p>Failed to load dashboard.</p></div>;
 
-  const { stats, statusBreakdown, priorityBreakdown, projects, overdueTasks, dueSoonTasks, myActiveTasks, recentTasks } = data;
+ const { stats, statusBreakdown, priorityBreakdown, projects, overdueTasks, dueSoonTasks, myActiveTasks } = data;
 
   const statusChartData = Object.entries(statusBreakdown).map(([k, v]) => ({ name: k, value: v, color: STATUS_COLORS[k] }));
   const priorityChartData = Object.entries(priorityBreakdown).filter(([, v]) => v > 0).map(([k, v]) => ({ name: k, value: v, color: PRIORITY_COLORS[k] }));
